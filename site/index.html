@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mihir Almaula — Mobile Application Developer (iOS · Flutter)</title>
+<meta name="description" content="Mobile Application Developer with 5+ years of experience in Swift, SwiftUI, UIKit, Objective-C and Flutter. 4 live apps on the App Store & Google Play, incl. a 4.8★ government app. Team Lead at IQ Infinite Technologies.">
+<meta property="og:title" content="Mihir Almaula — Mobile Application Developer (iOS · Flutter)">
+<meta property="og:description" content="5+ years building iOS & Flutter apps. 4 live apps on the App Store & Google Play — incl. a government app rated 4.8★ (439 ratings).">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#eef2f6;--surface:#fff;--ink:#101820;--muted:#566272;--line:#d8e0e8;--blue:#1565ff;--blue-ink:#fff;--soft:#e4edff;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#0c121a;--surface:#141c27;--ink:#eaf0f7;--muted:#9aa8b9;--line:#243142;--blue:#5b94ff;--blue-ink:#07101c;--soft:#1a2a47}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+
+/* ---------- hero ---------- */
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;padding:64px 0 36px}
+h1{font-size:clamp(40px,7vw,66px);line-height:1.02;letter-spacing:-.035em;margin:0;font-weight:800}
+.role{font-size:20px;margin:14px 0 0;color:var(--blue);font-weight:650}
+.lead{margin:16px 0 0;max-width:50ch;color:var(--muted)}
+.lead b{color:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:14px;font-weight:650;font-size:16px;text-decoration:none;border:1.5px solid var(--line);background:var(--surface);transition:border-color .15s, transform .15s}
+.btn:hover{border-color:var(--blue);transform:translateY(-1px)}
+.btn.main{background:var(--blue);color:var(--blue-ink);border-color:var(--blue)}
+.btn svg{flex:none}
+
+/* ---------- phone ---------- */
+.phone{justify-self:center;width:min(250px,100%);aspect-ratio:9/18.5;background:var(--ink);border-radius:42px;padding:10px;box-shadow:0 30px 60px -30px rgba(16,24,32,.55)}
+.screen{height:100%;border-radius:33px;background:linear-gradient(160deg,var(--soft),var(--surface));padding:34px 16px 16px;position:relative;overflow:hidden}
+.screen::before{content:"";position:absolute;top:10px;left:50%;width:70px;height:20px;border-radius:12px;background:var(--ink);transform:translateX(-50%)}
+.icons{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 10px}
+.ic{text-align:center;font-size:11px;color:var(--muted);line-height:1.2}
+.ic i{display:grid;place-items:center;aspect-ratio:1;border-radius:22%;margin-bottom:5px;font-style:normal;font-weight:800;font-size:15px;color:#fff}
+
+/* ---------- stats ---------- */
+.stats{display:flex;flex-wrap:wrap;gap:14px 46px;padding:6px 0 8px}
+.stat b{display:block;font-size:28px;font-weight:800;letter-spacing:-.02em}
+.stat span{font-size:14px;color:var(--muted);font-weight:550}
+
+/* ---------- sections ---------- */
+section{padding:34px 0}
+h2{font-size:28px;letter-spacing:-.02em;margin:0 0 6px}
+.sub{margin:0 0 20px;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.group{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+.group h3{margin:0 0 10px;font-size:17px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;padding:0;margin:0;list-style:none}
+.tags li{background:var(--soft);color:var(--ink);border-radius:9px;padding:4px 11px;font-size:14.5px;font-weight:550}
+
+/* ---------- apps ---------- */
+.apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.app{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:10px}
+.app .top{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.app .logo{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:24px;flex:none}
+.app .name{display:flex;flex-direction:column;gap:3px}
+.app h3{margin:0;font-size:19px}
+.note{font-size:12.5px;font-weight:700;color:var(--blue)}
+.app p{margin:0;color:var(--muted);font-size:15.5px;flex:1}
+
+/* ---------- experience ---------- */
+.jobs{display:flex;flex-direction:column;gap:0}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px}
+.job + .job{margin-top:14px}
+.job .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.job h3{margin:0;font-size:18px}
+.job .date{font-size:14px;font-weight:650;color:var(--blue);white-space:nowrap}
+.job .co{margin:2px 0 10px;color:var(--muted);font-size:15px}
+.job ul{margin:0;padding-left:20px;color:var(--muted);font-size:15.5px}
+.job li{margin-bottom:5px}
+.job li:last-child{margin-bottom:0}
+.job li b{color:var(--ink)}
+
+/* ---------- cv banner & footer ---------- */
+.cv{background:var(--ink);color:var(--bg);border-radius:24px;padding:30px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;margin:20px 0 10px}
+.cv h2{margin:0}
+.cv p{margin:4px 0 0;opacity:.75}
+.cv .btn{background:var(--blue);color:var(--blue-ink);border-color:var(--blue)}
+footer{padding:30px 0 50px;color:var(--muted);font-size:15px}
+footer a{font-weight:550}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;padding-top:40px}
+  .phone{width:200px}
+  .stats{gap:12px 30px}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div>
+      <h1>Mihir Almaula</h1>
+      <p class="role">Mobile Application Developer — iOS · Flutter</p>
+      <p class="lead"><b>5+ years</b> building and shipping production apps in fintech, government services, QSR operations and real estate. <b>4 live apps</b> on the App Store &amp; Google Play — including a government ticket-booking app rated <b>4.8★ (439 ratings)</b>. Currently leading a 3–4 developer team at IQ Infinite Technologies.</p>
+      <div class="btns">
+        <a class="btn main" href="Mihir-Almaula-CV.pdf" target="_blank">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+        <a class="btn" href="mailto:mihiralmaula19@gmail.com">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/mihir-almaula-b8548116b" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Mihir1913" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+    <div class="phone" aria-hidden="true">
+      <div class="screen"><div class="icons">
+        <div class="ic"><i style="background:#f05138">Sw</i>Swift</div>
+        <div class="ic"><i style="background:#1565ff">UI</i>UIKit</div>
+        <div class="ic"><i style="background:#7a4dff">SUI</i>SwiftUI</div>
+        <div class="ic"><i style="background:#027cdf">Ft</i>Flutter</div>
+        <div class="ic"><i style="background:#3395ff">₹</i>Razorpay</div>
+        <div class="ic"><i style="background:#ffa000">Fb</i>Firebase</div>
+        <div class="ic"><i style="background:#8a5a2b">DB</i>Core Data</div>
+        <div class="ic"><i style="background:#12a67a">RM</i>Realm</div>
+        <div class="ic"><i style="background:#e5484d">🔔</i>Push</div>
+      </div></div>
+    </div>
+  </header>
+
+  <!-- ============ STATS ============ -->
+  <div class="stats">
+    <div class="stat"><b>5+</b><span>Years of experience</span></div>
+    <div class="stat"><b>4</b><span>Live apps · 2 platforms</span></div>
+    <div class="stat"><b>4.8★</b><span>Top App Store rating (439)</span></div>
+    <div class="stat"><b>3–4</b><span>Developers led</span></div>
+  </div>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p class="sub">What I use day to day.</p>
+    <div class="skills">
+      <div class="group"><h3>Languages &amp; UI</h3><ul class="tags"><li>Swift</li><li>SwiftUI</li><li>Objective-C</li><li>Dart</li><li>UIKit</li><li>Auto Layout</li></ul></div>
+      <div class="group"><h3>Architecture</h3><ul class="tags"><li>MVVM</li><li>MVC</li><li>Agile / Scrum</li><li>Code review</li></ul></div>
+      <div class="group"><h3>Features I build</h3><ul class="tags"><li>Razorpay payments</li><li>Live chat (WebSocket)</li><li>Push notifications (APNs / FCM)</li><li>QR payments &amp; check-in</li><li>AdMob</li></ul></div>
+      <div class="group"><h3>Data &amp; backend</h3><ul class="tags"><li>Firebase (Auth · Firestore · Crashlytics)</li><li>Core Data</li><li>Realm</li><li>REST APIs</li><li>URLSession</li></ul></div>
+      <div class="group"><h3>Tools &amp; release</h3><ul class="tags"><li>Xcode</li><li>App Store Connect</li><li>TestFlight</li><li>Git · GitHub · GitLab</li><li>Jira</li></ul></div>
+      <div class="group"><h3>AI-assisted dev</h3><ul class="tags"><li>Claude</li><li>ChatGPT</li><li>Cursor</li><li>Code generation &amp; debugging</li></ul></div>
+    </div>
+  </section>
+
+  <!-- ============ APPS ============ -->
+  <section id="apps">
+    <h2>Apps</h2>
+    <p class="sub">Selected production apps — 4 live on the App Store &amp; Google Play.</p>
+    <div class="apps">
+
+      <article class="app">
+        <div class="top"><div class="logo" style="background:#1565ff">G</div>
+          <div class="name"><h3>Gujarat Science City</h3><span class="note">★ 4.8 · 439 ratings</span></div></div>
+        <p>Government-facing ticket-booking app on the App Store — QR-based payments, booking history and digital ticket delivery.</p>
+        <ul class="tags"><li>Swift</li><li>Objective-C</li><li>QR payments</li></ul>
+      </article>
+
+      <article class="app">
+        <div class="top"><div class="logo" style="background:#e5484d">E</div>
+          <div class="name"><h3>EQSR 360</h3><span class="note">↓ ~30% crash rate</span></div></div>
+        <p>QSR food-safety and operations platform — digital safety logs and push-notification task alerts. Crashlytics-driven fixes cut the crash rate by ~30%.</p>
+        <ul class="tags"><li>Swift</li><li>MVC</li><li>Crashlytics</li></ul>
+      </article>
+
+      <article class="app">
+        <div class="top"><div class="logo" style="background:#c9962e">Au</div>
+          <div class="name"><h3>GoldNest</h3><span class="note">Fintech · iOS</span></div></div>
+        <p>Virtual-gold investment app — Razorpay payment gateway, daily / monthly / yearly SIP plans, secure wallet withdrawals and multi-role shop management.</p>
+        <ul class="tags"><li>Razorpay</li><li>SIP</li><li>Wallet</li></ul>
+      </article>
+
+      <article class="app">
+        <div class="top"><div class="logo" style="background:#12a67a">Q</div>
+          <div class="name"><h3>Qeazy</h3><span class="note">My idea → Google Play</span></div></div>
+        <p>Restaurant queue &amp; table management with QR check-in, guest calling and queue analytics. Proposed the concept, got leadership approval and shipped it on Google Play.</p>
+        <ul class="tags"><li>Flutter</li><li>Dart</li><li>Google Play</li></ul>
+      </article>
+
+      <article class="app">
+        <div class="top"><div class="logo" style="background:#7a4dff">R</div>
+          <div class="name"><h3>Real Estate Platform</h3><span class="note">iOS</span></div></div>
+        <p>Property buying / selling / renting with WebSocket real-time chat, advanced search filters and document verification that flags fraudulent listings.</p>
+        <ul class="tags"><li>Swift</li><li>MVVM</li><li>WebSocket</li></ul>
+      </article>
+
+      <article class="app">
+        <div class="top"><div class="logo" style="background:#f05138">K</div>
+          <div class="name"><h3>Kachuful &amp; Word Play</h3><span class="note">Personal apps</span></div></div>
+        <p>My own apps: a card-game scorekeeper with Realm offline storage and a real-time charades game with Firestore sync — both monetised with AdMob.</p>
+        <ul class="tags"><li>Realm</li><li>Firestore</li><li>AdMob</li></ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <p class="sub">From trainee to team lead.</p>
+    <div class="jobs">
+      <div class="job">
+        <div class="row"><h3>iOS Developer — Team Lead</h3><span class="date">Sep 2022 – Present</span></div>
+        <p class="co">IQ Infinite Technologies, Ahmedabad · promoted from Junior iOS Developer</p>
+        <ul>
+          <li>Lead a team of <b>3–4 developers</b> — sprint planning, Jira task management and code reviews.</li>
+          <li>Shipped <b>Gujarat Science City (4.8★)</b>, EQSR 360, GoldNest and a real-estate platform.</li>
+          <li>Proposed and delivered <b>Qeazy</b> (Flutter) — own product concept, released on Google Play.</li>
+          <li>Released and maintained apps via App Store Connect and TestFlight.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <div class="row"><h3>iOS Developer Trainee</h3><span class="date">Jun 2021 – Sep 2022</span></div>
+        <p class="co">SoftSolutions, India</p>
+        <ul>
+          <li>Built and tested iOS features with <b>Swift, UIKit and MVC</b>; REST API integration, JSON parsing, debugging and performance testing alongside senior developers.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CV BANNER ============ -->
+  <div class="cv">
+    <div><h2>Want the full story?</h2><p>My CV has my experience, projects and contact details.</p></div>
+    <a class="btn" href="Mihir-Almaula-CV.pdf" target="_blank">Download CV</a>
+  </div>
+
+  <footer>© 2026 Mihir Almaula · <a href="mailto:mihiralmaula19@gmail.com">mihiralmaula19@gmail.com</a> · <a href="https://www.linkedin.com/in/mihir-almaula-b8548116b" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/Mihir1913" target="_blank" rel="noopener">GitHub</a></footer>
+</main>
+</body>
+</html>
